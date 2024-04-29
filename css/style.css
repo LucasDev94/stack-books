@@ -1,0 +1,132 @@
+*,
+*::before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  color: rgb(0, 0, 0);
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack {
+  background-color: rgba(255, 247, 240, 0.185);
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  text-align: center;
+}
+
+.tittle1 {
+  font-size: 2.5rem;
+}
+
+.list-books {
+  width: 80%;
+  height: 250px;
+}
+
+.ul-books {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 1.2rem;
+  overflow-y: auto !important;
+  max-height: 300px;
+}
+
+.book-item {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.book-item:hover {
+  background: rgba(165, 143, 43, 0.486);
+}
+
+.btn-book {
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  background: rgb(131, 88, 33);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.panel-book {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #36332b62;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-add-book {
+  background-color: rgb(255, 251, 240);
+  width: 350px;
+  height: 250px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.name-new-book {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+}
+
+.close-form-add-book {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.close-panel-delete-book {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.inactive {
+  display: none;
+}

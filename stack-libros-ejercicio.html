@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stack Libros Ejercicio</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <main class="stack">
+      <div class="header">
+        <h1 class="tittle1">Stack de Libros</h1>
+        <span class="description">Libros disponibles</span>
+      </div>
+      <div class="list-books">
+        <ul class="ul-books">
+          <!-- lista de libros-->
+        </ul>
+      </div>
+      <div class="add-book">
+        <button class="btn-book" id="open-panel">Agregar Libro</button>
+      </div>
+    </main>
+    <div class="panel-book add inactive">
+      <form action="" class="form-add-book">
+        <h2 class="tittle2">Agrega un nuevo libro</h2>
+        <span class="description">A continuación escribe el nombre del libro que quieres agregar</span>
+        <input type="text" name="new-book" id="new-book" class="name-new-book"/>
+        <button class="btn-book" id="add-new-book">Agregar nuevo libro</button>
+        <span class="close-form-add-book">x</span>
+      </form>
+    </div>
+
+    <div class="panel-book delete inactive">
+      <div class="form-add-book">
+        <!-- <h2 class="tittle2">Eliminar Libro</h2> -->
+        <span class="description">Esta seguro que quiere eliminar el libro</span>
+        <h2 class="tittle2 tittle-book-delete">Titulo del libro</h2>
+        <button class="btn-book" id="acept-delete">Eliminar Libro</button>
+        <span class="close-panel-delete-book">x</span>
+      </div>
+    </div>
+
+    <script src="js/addDeleteBooks.js"></script>
+  </body>
+</html>
